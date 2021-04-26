@@ -101,10 +101,10 @@ theme: icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-# deploy:
-#   type: git
-#   repo: https://github.com/mfebriann/mfebriann.github.io.git
-#   branch: active
+deploy:
+  type: git
+  repo: https://github.com/mfebriann/mfebriann.github.io.git
+  branch: gh-actions
 
 # Feed
 feed:
