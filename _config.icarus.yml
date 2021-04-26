@@ -153,9 +153,10 @@ search:
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
-    type: disqus
-    # Disqus shortname
-    shortname: ''
+    type: utterances
+    repo: mfebriann/mfebriann.github.io
+    issue_term: pathname
+    theme: github-light     
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
@@ -220,7 +221,7 @@ widgets:
         # Author name
         author: Muhammad Febrian
         # Author title
-        author_title: Pengguna internet saja
+        author_title: Pengguna internet biasa
         # Author's current location
         location: Jakarta
         # URL or path to the avatar image
