@@ -4,8 +4,8 @@ Dibuat dengan [Hexo](https://hexo.io/)
 Tema [Icarus](https://github.com/ppoffice/hexo-theme-icarus)
 
 Untuk menginstall hexo diperlukan beberapa persyaratan:
-1. Git
-2. NodeJS
+1. [Git](https://git-scm.com/)
+2. [NodeJS](https://nodejs.org/en/)
 
 Dan untuk menggunakan tema Icarus diperlukan juga tambahan:
 ```
