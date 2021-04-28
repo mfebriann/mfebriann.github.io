@@ -121,16 +121,17 @@ feed:
   autodiscovery: true
   template: atom.xml
 
-#sitemap
-  sitemap:
+#lazy load
+lazyload:
+  enable: true
+  imgContainer: false
+  post:
+     only: true
+     excludeEncrypt: true
+  loadingImg: /img/og_image.png
+
+# Sitemap seo
+sitemap:
     path: sitemap.xml
     tag: false
-    category: false
-
-# Robot.txt
-robotstxt:
-useragent: "*"
-allow:
-- /
-sitemap: https://mfebriann.github.io/sitemap.xml
-
+    category: true
