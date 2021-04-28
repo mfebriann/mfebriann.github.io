@@ -10,7 +10,7 @@ date: 2021-04-27 09:53:14
 ---
 
 
-![Tampilan Program](/img/membuat-program-penjualan-barang/thumbnail.png)
+![Tampilan Program](/img/tutorial/membuat-program-penjualan-barang.png)
 
 Bismillahirrahmanirrahim
 
@@ -229,3 +229,4 @@ Saya juga masih belajar tentang Javascript ini, makanya saya senang ada pertanya
 Apabila ada kekurangan mohon dimaafkan :")
 
 Untuk Melihat Demo Program nya **[Demo-Program](https://codepen.io/mfebriann/pen/rNjRZVJ)**
+
