@@ -121,8 +121,16 @@ feed:
   autodiscovery: true
   template: atom.xml
 
-  #sitemap
+#sitemap
   sitemap:
     path: sitemap.xml
     tag: false
     category: false
+
+# Robot.txt
+robotstxt:
+useragent: "*"
+allow:
+- /
+sitemap: https://mfebriann.github.io/sitemap.xml
+
