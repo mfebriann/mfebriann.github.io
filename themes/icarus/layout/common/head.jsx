@@ -110,6 +110,7 @@ module.exports = class extends Component {
         return <head>
             <meta charset="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta name="google-site-verification" content="OWaabuFoPx4IRN04XRKOqZzsBfuoU_HJ4-TSgeSXFF4" />
             {meta && meta.length ? <MetaTags meta={meta} /> : null}
 
             <title>{getPageTitle(page, config.title, helper)}</title>
