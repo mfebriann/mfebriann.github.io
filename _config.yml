@@ -139,3 +139,10 @@ sitemap:
     path: sitemap.xml
     tag: false
     category: true
+
+# Robot.txt
+robotstxt:
+  useragent: "*"
+  allow:
+    - /
+  sitemap: /sitemap.xml
