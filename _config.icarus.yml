@@ -19,7 +19,7 @@ head:
         # The start URL of the web application
         start_url: 
         # The default theme color for the application
-        theme_color: 
+        theme_color: EF8181
         # A placeholder background color for the application page to display
         # before its stylesheet is loaded
         background_color: 
@@ -34,6 +34,7 @@ head:
                 sizes: ''
                 # A hint as to the media type of the image
                 type: 
+    canonical_url: https://mfebriann.github.io/
     # Open Graph metadata
     # https://hexo.io/docs/helpers.html#open-graph
     open_graph:
