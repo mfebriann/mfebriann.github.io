@@ -136,7 +136,7 @@ lazyload:
 
 # Sitemap seo
 sitemap:
-    path: sitemap.xml
+    path: https://mfebriann.github.io/sitemap.xml
     tag: false
     category: true
 
@@ -145,4 +145,4 @@ robotstxt:
   useragent: "*"
   allow:
     - /
-  sitemap: /sitemap.xml
+  sitemap: https://mfebriann.github.io/sitemap.xml
