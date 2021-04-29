@@ -136,7 +136,7 @@ lazyload:
 
 # Sitemap seo
 sitemap:
-    path: https://mfebriann.github.io/sitemap.xml
+    path: sitemap.xml
     tag: false
     category: true
 
