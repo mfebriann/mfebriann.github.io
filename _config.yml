@@ -128,11 +128,10 @@ feed:
 #lazy load
 lazyload:
   enable: true
-  imgContainer: false
-  post:
-     only: true
-     excludeEncrypt: true
+  onlypost: true
   loadingImg: /img/loading.png
+  isSPA: false
+  preloadRatio: 3 # optional, default is 1
 
 # Sitemap seo
 sitemap:
