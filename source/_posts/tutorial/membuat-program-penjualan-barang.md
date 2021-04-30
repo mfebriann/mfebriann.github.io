@@ -1,15 +1,12 @@
 ---
 title: Membuat Program Penjualan Barang dengan Javascript
-tags:
-  - html
-  - css
-  - javascript
+tags: [html, css, js]
 comments: true
 categories: tutorial
 date: 2021-04-27 09:53:14
 ---
 
-{% img tampilan-program /img/tutorial/membuat-program-penjualan-barang.png '"Tampilan Program"  "Tampilan Program"' %}
+{% img /img/tutorial/membuat-program-penjualan-barang/membuat-program-penjualan-barang.png '"Tampilan Program"  "Tampilan Program"' %}
 
 Bismillahirrahmanirrahim
 
