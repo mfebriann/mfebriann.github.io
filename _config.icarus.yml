@@ -95,7 +95,7 @@ head:
         # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
         - name=theme-color;content=#EF8181
     # URL or path to the website's RSS atom.xml
-    rss: 
+    rss: https://mfebriann.github.io/atom.xml
 # Page top navigation bar configurations
 navbar:
     # Navigation menu items
@@ -248,9 +248,9 @@ widgets:
             Codepen:
                 icon: fab fa-codepen
                 url: 'https://codepen.io/mfebriann'
-            # RSS:
-            #     icon: fas fa-rss
-            #     url: /
+            RSS:
+                icon: fas fa-rss
+                url: 'https://mfebriann.github.io/atom.xml'
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
