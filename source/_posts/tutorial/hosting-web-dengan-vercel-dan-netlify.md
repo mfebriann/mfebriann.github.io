@@ -38,7 +38,11 @@ Setelah persyaratan nya sudah dilengkapi. Kita mulai dengan Github terlebih dahu
  - Di Windows jika klik kanan pada mouse buka yang bertuliskan **Git Bash Here** 
  - Di GNU/Linux bertuliskan **Open in Terminal** (Saya menggunakan Linux Mint)
  - Di MacOS saya kurang tau hehe (Mungkin sama dengan di GNU/Linux)
-4. Kemudian cek versi git mu `git --version` pada hari ini aku memakai git versi **2.31.1**. Selanjutnya saya asumsikan kamu sudah memberikan konfigurasi awal yaitu username dan email, apabila belum kamu bisa lihat di [Config Git](https://support.atlassian.com/bitbucket-cloud/docs/configure-your-dvcs-username-for-commits/) pada teks **To set your global username/email configuration:**
+4. Kemudian cek versi git mu git dengan perintah:
+{% codeblock %}
+git --version
+{% endcodeblock %}
+ pada hari ini aku memakai git versi **2.31.1**. Selanjutnya saya asumsikan kamu sudah memberikan konfigurasi awal yaitu username dan email, apabila belum kamu bisa lihat di [Config Git](https://support.atlassian.com/bitbucket-cloud/docs/configure-your-dvcs-username-for-commits/) pada teks **To set your global username/email configuration:**
 5. Oke, setelah configurasi git telah selesai ketikan perintah dibawah ini untuk push ke Github kita:
 ```
 git init
