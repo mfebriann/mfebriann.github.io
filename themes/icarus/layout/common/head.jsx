@@ -160,7 +160,13 @@ module.exports = class extends Component {
             <link rel="stylesheet" href={fontCssUrl[variant]} />
             <link rel="stylesheet" href={url_for('/css/' + variant + '.css')} />
             <Plugins site={site} config={config} helper={helper} page={page} head={true} />
-            <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+            <link rel="apple-touch-icon" href="/img/icons/48x48.png" sizes="48x48" />
+            <link rel="apple-touch-icon" href="/img/icons/96x96.png" sizes="96x96" />
+            <link rel="apple-touch-icon" href="/img/icons/144x144.png" sizes="144x144" />
+            <link rel="apple-touch-icon" href="/img/icons/192x192.png" sizes="192x192" />
+            <link rel="apple-touch-icon" href="/img/icons/256x256.png" sizes="256x256" />
+            <link rel="apple-touch-icon" href="/img/icons/384x384.png" sizes="384x384" />
+            <link rel="apple-touch-icon" href="/img/icons/512x512.png" sizes="512x512" />
 
             {adsenseClientId ? <script data-ad-client={adsenseClientId}
                 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script> : null}
