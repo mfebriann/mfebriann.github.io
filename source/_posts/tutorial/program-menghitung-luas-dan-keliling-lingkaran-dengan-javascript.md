@@ -10,7 +10,6 @@ category: tutorial
 date: 2021-05-07 00:04:23
 ---
 
-
 {% img /img/tutorial/program-luas-keliling-lingkaran/hero.png '"Tampilan Program" "Tampilan Program"' %}
 
 Bismillahirrahmanirrahim
@@ -28,6 +27,7 @@ Pertama-tama kita menghitung luas dan keliling lingkaran menggunakan cara Pi 22/
 Buatlah file html terlebih dahulu, lalu tuliskan kode struktur html. Atau kamu bisa salin kode dibawah ini:
 
 {% codeblock index.html lang:html %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -41,13 +41,15 @@ Buatlah file html terlebih dahulu, lalu tuliskan kode struktur html. Atau kamu b
 
         <script src="main.js"></script>
     </body>
+
 </html>
 {% endcodeblock %}
 
-Sedikit catatan, disini saya juga menambahkan perintah untuk menghubungkan file html kita ke file css dan javascript nya yang terletak pada baris 8 dan 12, kamu bisa menyesuaikan dimana letak kamu menyimpan file css dan file javascript. 
+Sedikit catatan, disini saya juga menambahkan perintah untuk menghubungkan file html kita ke file css dan javascript nya yang terletak pada baris 8 dan 12, kamu bisa menyesuaikan dimana letak kamu menyimpan file css dan file javascript.
 
 Setelah file html telah siap, kita buat tag form sederhana untuk user menginputkan nilai nya. Atau kamu bisa salin kode dibawah ini di dalam tag **body** pada html:
 {% codeblock index.html lang:html %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -115,6 +117,7 @@ Setelah file html telah siap, kita buat tag form sederhana untuk user menginputk
 
         <script src="main.js"></script>
     </body>
+
 </html>
 {% endcodeblock %}
 
@@ -124,9 +127,10 @@ Maka hasil tampilan kode diatas akan seperti ini.
 ### Keterangan
 
 1. Terdapat attribut html yaitu **id** yang dimana di teks akhirnya terdapat **J**, **LJ** dan **KJ** Yang dimana itu merupakan singkatan, yaitu:
- - J = jari-jari
- - LJ = luas jari-jari
- - KJ = keliling jari-jari
+
+- J = jari-jari
+- LJ = luas jari-jari
+- KJ = keliling jari-jari
 
 Setelah file html kita buat, maka sekarang kita menghias sedikit website kita agar lebih menarik menggunakan css. Sebelumnya kita sudah menghubungkan file css pada html kita, buatlah file css dengan nama **style.css** sesuai yang sudah kita hubungkan. Silahkan kamu buat, lalu kamu hias sesuai selera masing-masing.
 
@@ -134,67 +138,67 @@ Atau kamu bisa mengikuti saya dengan menyalin kode dibawah ini:
 {% codeblock style.css lang:css %}
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-/* Untuk menghilangkan tanda panah atas dan bawah pada input number */
-/* Chrome, Safari, Edge, Opera */
+/_ Untuk menghilangkan tanda panah atas dan bawah pada input number _/
+/_ Chrome, Safari, Edge, Opera _/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+-webkit-appearance: none;
+margin: 0;
 }
 
-/* Firefox */
+/_ Firefox _/
 input[type=number] {
-  -moz-appearance: textfield;
+-moz-appearance: textfield;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  overflow-x: hidden;
+font-family: "Roboto", sans-serif;
+margin: 0;
+overflow-x: hidden;
 }
 
 h1 {
-  margin-bottom: 16px;
+margin-bottom: 16px;
 }
 
 h1,
 h2 {
-  text-align: center;
+text-align: center;
 }
 
 h2 {
-  color: #fff;
+color: #fff;
 }
 
 form {
-  padding: 10px;
-  background-color: rgb(44, 129, 226);
-  width: 100%;
+padding: 10px;
+background-color: rgb(44, 129, 226);
+width: 100%;
 }
 
 table {
-  margin: auto;
-  background-color: #fff;
+margin: auto;
+background-color: #fff;
 }
 
 input[type="text"] {
-  color: #333;
-  font-weight: 700;
-  padding: 6px;
+color: #333;
+font-weight: 700;
+padding: 6px;
 }
 
 label {
-  display: flex;
+display: flex;
 }
 
 label input[type="text"] {
-  margin-right: 5px;
+margin-right: 5px;
 }
 
 @media (max-width: 786px) {
-  form {
-    overflow: scroll;
-  }
+form {
+overflow: scroll;
+}
 }
 {% endcodeblock %}
 
@@ -208,80 +212,80 @@ Maka hasil tampilan kode diatas akan seperti ini.
 
 Nah, sekarang sudah lumayan menarik lah ya walaupun gak bagus-bagus amet wkwkwk. Tapi ini belum bisa melakukan penghitungan luas dan keliling, disini kita perlu javascript untuk melakukan itu.
 
-Maka siapkan terlebih dahulu file javascript nya, buat nama file javascript kita dengan nama **main.js** sesuai yang telah kita hubungkan juga pada file html kita. 
+Maka siapkan terlebih dahulu file javascript nya, buat nama file javascript kita dengan nama **main.js** sesuai yang telah kita hubungkan juga pada file html kita.
 
-Jika kamu sudah membuatnya, silahkan coba manipulasi sendiri jika kamu mau, mungkin cara kamu lebih efektif dibandingkan cara saya. Atau kamu bisa salin kode dibawah ini: 
+Jika kamu sudah membuatnya, silahkan coba manipulasi sendiri jika kamu mau, mungkin cara kamu lebih efektif dibandingkan cara saya. Atau kamu bisa salin kode dibawah ini:
 {% codeblock main.js lang:javascript %}
 // Menghitung luas lingkaran jari-jari
-// rumus: pi * r * r
+// rumus: pi _ r _ r
 function luasJariJari(a) {
-  return (22 / 7) * a * a;
+return (22 / 7) _ a _ a;
 }
 
 const inputLJ = document.getElementById("luasJ");
 document.getElementById("btnLJ").addEventListener("click", (e) => {
-  if (inputLJ.value == "") {
-    alert("Isi nilai terlebih dahulu!");
-  } else if (inputLJ.value != 7 && inputLJ.value % 7 != 0) {
-    alert("Isi nilai dengan kelipatan 7!");
-  } else if (inputLJ.value % 7 == 0) {
-    document.getElementById("hasilLJ").value = luasJariJari(inputLJ.value);
-  }
-  e.preventDefault();
+if (inputLJ.value == "") {
+alert("Isi nilai terlebih dahulu!");
+} else if (inputLJ.value != 7 && inputLJ.value % 7 != 0) {
+alert("Isi nilai dengan kelipatan 7!");
+} else if (inputLJ.value % 7 == 0) {
+document.getElementById("hasilLJ").value = luasJariJari(inputLJ.value);
+}
+e.preventDefault();
 });
 
 // Menghitung Keliling Lingkaran jari-jari
-// rumus: pi * 2 * r
+// rumus: pi _ 2 _ r
 function kelilingJariJari(c) {
-  return (22 / 7) * 2 * c;
+return (22 / 7) _ 2 _ c;
 }
 
 const inputKJ = document.getElementById("kelilingJ");
 document.getElementById("btnKJ").addEventListener("click", (e) => {
-  if (inputKJ.value == "") {
-    alert("Isi nilai terlebih dahulu!");
-  } else if (inputKJ.value != 7 && inputKJ.value % 7 != 0) {
-    alert("Isi nilai dengan kelipatan 7!");
-  } else if (inputKJ.value % 7 == 0) {
-    document.getElementById("hasilKJ").value = kelilingJariJari(inputKJ.value);
-  }
-  e.preventDefault();
+if (inputKJ.value == "") {
+alert("Isi nilai terlebih dahulu!");
+} else if (inputKJ.value != 7 && inputKJ.value % 7 != 0) {
+alert("Isi nilai dengan kelipatan 7!");
+} else if (inputKJ.value % 7 == 0) {
+document.getElementById("hasilKJ").value = kelilingJariJari(inputKJ.value);
+}
+e.preventDefault();
 });
 
 // Menghitung luas lingkaran diameter
-// rumus: pi * (r / 2) * (r/2)
+// rumus: pi _ (r / 2) _ (r/2)
 function luasDiameter(b) {
-  return (22 / 7) * ((b / 2) * (b / 2));
+return (22 / 7) _ ((b / 2) _ (b / 2));
 }
 
 const inputLD = document.getElementById("luasD");
 document.getElementById("btnLD").addEventListener("click", (e) => {
-  if (inputLD.value == "") {
-    alert("Isi nilai terlebih dahulu!");
-  } else if (inputLD.value != 7 && inputLD.value % 7 != 0) {
-    alert("Isi nilai dengan kelipatan 7!");
-  } else if (inputLD.value % 7 == 0) {
-    document.getElementById("hasilLD").value = luasDiameter(inputLD.value);
-  }
-  e.preventDefault();
+if (inputLD.value == "") {
+alert("Isi nilai terlebih dahulu!");
+} else if (inputLD.value != 7 && inputLD.value % 7 != 0) {
+alert("Isi nilai dengan kelipatan 7!");
+} else if (inputLD.value % 7 == 0) {
+document.getElementById("hasilLD").value = luasDiameter(inputLD.value);
+}
+e.preventDefault();
 });
 
 // Menghitung Keliling Lingkaran diameter
-// rumus: pi * d
+// rumus: pi _ d
 function kelilingDiameter(d) {
-  return (22 / 7) * d;
+return (22 / 7) _ d;
 }
 
 const inputKD = document.getElementById("kelilingD");
 document.getElementById("btnKD").addEventListener("click", (e) => {
-  if (inputKD.value == "") {
-    alert("Isi nilai terlebih dahulu!");
-  } else if (inputKD.value != 7 && inputKD.value % 7 != 0) {
-    alert("Isi nilai dengan kelipatan 7!");
-  } else if (inputKD.value % 7 == 0) {
-    document.getElementById("hasilKD").value = kelilingDiameter(inputKD.value);
-  }
-  e.preventDefault();
+if (inputKD.value == "") {
+alert("Isi nilai terlebih dahulu!");
+} else if (inputKD.value != 7 && inputKD.value % 7 != 0) {
+alert("Isi nilai dengan kelipatan 7!");
+} else if (inputKD.value % 7 == 0) {
+document.getElementById("hasilKD").value = kelilingDiameter(inputKD.value);
+}
+e.preventDefault();
 });
 {% endcodeblock %}
 
@@ -289,6 +293,7 @@ Maka hasil tampilan kode diatas akan seperti ini.
 {% img /img/tutorial/program-luas-keliling-lingkaran/tampilan-js.gif '"Tampilan browser dari file javascript" "Tampilan browser dari file javascript"' %}
 
 ### Keterangan
+
 1. Membuat beberapa fungsi untuk rumus nya
 2. Menyeleksi beberapa tag html dengan attribut id nya
 3. Melakukan pengkondisian untuk melakukan ketika user tidak memasukkan nilai, user tidak memasukkan nilai yang bukan kelipatan 7 dan ketika user memasukkan nilai kelipatan 7 baru ditampilkan hasil nya
@@ -302,7 +307,9 @@ Sebelumnya didalam tag **body** pada file html kita berisi bagian perhitungan me
 
 Sekarang kamu bisa tambahkan dibawah setelah tag penutup form yang ada dibaris 64 (sesuai kode file html diatas sebelumnya), kamu bisa salin kode dibawah ini:
 {% codeblock index.html lang:html %}
+
  <!-- Bagian Pi 3, 14 -->
+
     <form class="pi2">
       <h2>Dengan Pi: 3,14</h2>
       <table border="2px solid #333" cellpadding="10">
@@ -355,10 +362,12 @@ Sekarang kamu bisa tambahkan dibawah setelah tag penutup form yang ada dibaris 6
         </tr>
       </table>
     </form>
+
 {% endcodeblock %}
 
 Sehingga jika digabungkan kode nya, akan menjadi seperti ini:
 {% codeblock index.html lang:html %}
+
  <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -478,6 +487,7 @@ Sehingga jika digabungkan kode nya, akan menjadi seperti ini:
       </table>
     </form>
     <script src="lingkaran.js"></script>
+
   </body>
 </html>
 {% endcodeblock %}
@@ -486,26 +496,29 @@ Maka hasil tampilan kode diatas akan seperti ini.
 {% img /img/tutorial/program-luas-keliling-lingkaran/tampilan-html2.png '"Tampilan browser dari file css" "Tampilan browser dari file css"' %}
 
 ### Keterangan
+
 1. Terdapat attribut html yaitu **id** yang dimana di teks akhirnya terdapat **D**, **LD**, **KD**. Yang dimana itu merupakan singkatan, yaitu:
- - D = diameter
- - LD = luas diameter
- - KD = keliling diameter
+
+- D = diameter
+- LD = luas diameter
+- KD = keliling diameter
+
 2. Terdapat attribut **class** pada tag form yang kedua, yaitu **pi2** walaupun form kesatu juga ada, **pi2** akan digunakan pada pemanggilan di css
 
 Baik, kita beralih ke file css nya, di css cukup tambahkan **pi2** itu dan ubah warna background nya agar membedakan dari bagian Pi 22/7, warna background bisa kamu sesuaikan. Atau kamu bisa salin kode dibawah ini dan paste ke file css kamu sebelum nya:
 {% codeblock style.css lang:css %}
 .pi2 {
-  background-color: rgb(33, 201, 103);
+background-color: rgb(33, 201, 103);
 }
 
 @media (max-width: 786px) {
-  form {
-    overflow: scroll;
-  }
+form {
+overflow: scroll;
+}
 
-  .pi2 {
-    margin-top: 20px;
-  }
+.pi2 {
+margin-top: 20px;
+}
 }
 {% endcodeblock %}
 
@@ -513,75 +526,75 @@ Sehingga jika digabung kode nya akan menjadi seperti ini:
 {% codeblock style.css lang:css %}
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-/* Untuk menghilangkan tanda panah atas dan bawah pada input number */
-/* Chrome, Safari, Edge, Opera */
+/_ Untuk menghilangkan tanda panah atas dan bawah pada input number _/
+/_ Chrome, Safari, Edge, Opera _/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+-webkit-appearance: none;
+margin: 0;
 }
 
-/* Firefox */
+/_ Firefox _/
 input[type=number] {
-  -moz-appearance: textfield;
+-moz-appearance: textfield;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  overflow-x: hidden;
+font-family: "Roboto", sans-serif;
+margin: 0;
+overflow-x: hidden;
 }
 
 h1 {
-  margin-bottom: 16px;
+margin-bottom: 16px;
 }
 
 h1,
 h2 {
-  text-align: center;
+text-align: center;
 }
 
 h2 {
-  color: #fff;
+color: #fff;
 }
 
 form {
-  padding: 10px;
-  background-color: rgb(44, 129, 226);
-  width: 100%;
+padding: 10px;
+background-color: rgb(44, 129, 226);
+width: 100%;
 }
 
 table {
-  margin: auto;
-  background-color: #fff;
+margin: auto;
+background-color: #fff;
 }
 
 input[type="text"] {
-  color: #333;
-  font-weight: 700;
-  padding: 6px;
+color: #333;
+font-weight: 700;
+padding: 6px;
 }
 
 label {
-  display: flex;
+display: flex;
 }
 
 label input[type="text"] {
-  margin-right: 5px;
+margin-right: 5px;
 }
 
 .pi2 {
-  background-color: rgb(33, 201, 103);
+background-color: rgb(33, 201, 103);
 }
 
 @media (max-width: 786px) {
-  form {
-    overflow: scroll;
-  }
+form {
+overflow: scroll;
+}
 
-  .pi2 {
-    margin-top: 20px;
-  }
+.pi2 {
+margin-top: 20px;
+}
 }
 {% endcodeblock %}
 
@@ -590,224 +603,223 @@ Maka hasil tampilan dari kode diatas akan seperti ini.
 
 Oke, terakhir kita ke beralih ke file javascript nya. Mungkin sama aja seperti kode javascript diatas, yang membedakan adalah rumus menggunakan 3,14. Kamu bisa salin kode ini dan tambahkan di file main.js kamu sebelum nya:
 {% codeblock main.js lang:javascript %}
-
 // ------------------- Dibawah ini khusus Pi 3,14 -----------------
 // Menghitung luas lingkaran jari-jari
-// rumus: pi * r * r
+// rumus: pi _ r _ r
 function luasJariJari2(e) {
-  return 3.14 * e * e;
+return 3.14 _ e _ e;
 }
 const inputLJ2 = document.getElementById("luasJ2");
 document.getElementById("btnLJ2").addEventListener("click", (e) => {
-  if (inputLJ2.value == "") {
-    alert("Isi nilai terlebih dahulu!");
-  } else if (inputLJ2.value % 7 == 0) {
-    alert("Kelipatan 7 isi dibagian Pi: 22/7 ");
-  } else {
-    document.getElementById("hasilLJ2").value = luasJariJari2(inputLJ2.value);
-  }
-  e.preventDefault();
+if (inputLJ2.value == "") {
+alert("Isi nilai terlebih dahulu!");
+} else if (inputLJ2.value % 7 == 0) {
+alert("Kelipatan 7 isi dibagian Pi: 22/7 ");
+} else {
+document.getElementById("hasilLJ2").value = luasJariJari2(inputLJ2.value);
+}
+e.preventDefault();
 });
 
 // Menghitung Keliling Lingkaran jari-jari
-// rumus: pi * 2 * r
+// rumus: pi _ 2 _ r
 function kelilingJariJari2(f) {
-  return 3.14 * 2 * f;
+return 3.14 _ 2 _ f;
 }
 
 const inputKJ2 = document.getElementById("kelilingJ2");
 document.getElementById("btnKJ2").addEventListener("click", (e) => {
-  if (inputKJ2.value == "") {
-    alert("Isi nilai terlebih dahulu!");
-  } else if (inputKJ2.value % 7 == 0) {
-    alert("Kelipatan 7 isi dibagian Pi: 22/7 ");
-  } else {
-    document.getElementById("hasilKJ2").value = kelilingJariJari2(inputKJ2.value);
-  }
-  e.preventDefault();
+if (inputKJ2.value == "") {
+alert("Isi nilai terlebih dahulu!");
+} else if (inputKJ2.value % 7 == 0) {
+alert("Kelipatan 7 isi dibagian Pi: 22/7 ");
+} else {
+document.getElementById("hasilKJ2").value = kelilingJariJari2(inputKJ2.value);
+}
+e.preventDefault();
 });
 
 // Menghitung luas lingkaran diameter
-// rumus: pi * (r / 2) * (r/2)
+// rumus: pi _ (r / 2) _ (r/2)
 function luasDiameter2(g) {
-  return 3.14 * ((g / 2) * (g / 2));
+return 3.14 _ ((g / 2) _ (g / 2));
 }
 
 const inputLD2 = document.getElementById("luasD2");
 document.getElementById("btnLD2").addEventListener("click", (e) => {
-  if (inputLD2.value == "") {
-    alert("Isi nilai terlebih dahulu!");
-  } else if (inputLD2.value % 7 == 0) {
-    alert("Kelipatan 7 isi dibagian Pi: 22/7 ");
-  } else {
-    document.getElementById("hasilLD2").value = luasDiameter2(inputLD2.value);
-  }
-  e.preventDefault();
+if (inputLD2.value == "") {
+alert("Isi nilai terlebih dahulu!");
+} else if (inputLD2.value % 7 == 0) {
+alert("Kelipatan 7 isi dibagian Pi: 22/7 ");
+} else {
+document.getElementById("hasilLD2").value = luasDiameter2(inputLD2.value);
+}
+e.preventDefault();
 });
 
 // Menghitung Keliling Lingkaran diameter
-// rumus: pi * d
+// rumus: pi _ d
 function kelilingDiameter2(h) {
-  return 3.14 * h;
+return 3.14 _ h;
 }
 
 const inputKD2 = document.getElementById("kelilingD2");
 document.getElementById("btnKD2").addEventListener("click", (e) => {
-  if (inputKD2.value == "") {
-    alert("Isi nilai terlebih dahulu!");
-  } else if (inputKD2.value % 7 == 0) {
-    alert("Kelipatan 7 isi dibagian Pi: 22/7 ");
-  } else {
-    document.getElementById("hasilKD2").value = kelilingDiameter2(inputKD2.value);
-  }
-  e.preventDefault();
+if (inputKD2.value == "") {
+alert("Isi nilai terlebih dahulu!");
+} else if (inputKD2.value % 7 == 0) {
+alert("Kelipatan 7 isi dibagian Pi: 22/7 ");
+} else {
+document.getElementById("hasilKD2").value = kelilingDiameter2(inputKD2.value);
+}
+e.preventDefault();
 });
 {% endcodeblock %}
 
 Sehingga jika digabung kode nya akan menjadi seperti ini:
 {% codeblock main.js lang:javascript %}
 // Menghitung luas lingkaran jari-jari
-// rumus: pi * r * r
+// rumus: pi _ r _ r
 function luasJariJari(a) {
-  return (22 / 7) * a * a;
+return (22 / 7) _ a _ a;
 }
 
 const inputLJ = document.getElementById("luasJ");
 document.getElementById("btnLJ").addEventListener("click", (e) => {
-  if (inputLJ.value == "") {
-    alert("Isi nilai terlebih dahulu!");
-  } else if (inputLJ.value != 7 && inputLJ.value % 7 != 0) {
-    alert("Isi nilai dengan kelipatan 7!");
-  } else if (inputLJ.value % 7 == 0) {
-    document.getElementById("hasilLJ").value = luasJariJari(inputLJ.value);
-  }
-  e.preventDefault();
+if (inputLJ.value == "") {
+alert("Isi nilai terlebih dahulu!");
+} else if (inputLJ.value != 7 && inputLJ.value % 7 != 0) {
+alert("Isi nilai dengan kelipatan 7!");
+} else if (inputLJ.value % 7 == 0) {
+document.getElementById("hasilLJ").value = luasJariJari(inputLJ.value);
+}
+e.preventDefault();
 });
 
 // Menghitung Keliling Lingkaran jari-jari
-// rumus: pi * 2 * r
+// rumus: pi _ 2 _ r
 function kelilingJariJari(c) {
-  return (22 / 7) * 2 * c;
+return (22 / 7) _ 2 _ c;
 }
 
 const inputKJ = document.getElementById("kelilingJ");
 document.getElementById("btnKJ").addEventListener("click", (e) => {
-  if (inputKJ.value == "") {
-    alert("Isi nilai terlebih dahulu!");
-  } else if (inputKJ.value != 7 && inputKJ.value % 7 != 0) {
-    alert("Isi nilai dengan kelipatan 7!");
-  } else if (inputKJ.value % 7 == 0) {
-    document.getElementById("hasilKJ").value = kelilingJariJari(inputKJ.value);
-  }
-  e.preventDefault();
+if (inputKJ.value == "") {
+alert("Isi nilai terlebih dahulu!");
+} else if (inputKJ.value != 7 && inputKJ.value % 7 != 0) {
+alert("Isi nilai dengan kelipatan 7!");
+} else if (inputKJ.value % 7 == 0) {
+document.getElementById("hasilKJ").value = kelilingJariJari(inputKJ.value);
+}
+e.preventDefault();
 });
 
 // Menghitung luas lingkaran diameter
-// rumus: pi * (r / 2) * (r/2)
+// rumus: pi _ (r / 2) _ (r/2)
 function luasDiameter(b) {
-  return (22 / 7) * ((b / 2) * (b / 2));
+return (22 / 7) _ ((b / 2) _ (b / 2));
 }
 
 const inputLD = document.getElementById("luasD");
 document.getElementById("btnLD").addEventListener("click", (e) => {
-  if (inputLD.value == "") {
-    alert("Isi nilai terlebih dahulu!");
-  } else if (inputLD.value != 7 && inputLD.value % 7 != 0) {
-    alert("Isi nilai dengan kelipatan 7!");
-  } else if (inputLD.value % 7 == 0) {
-    document.getElementById("hasilLD").value = luasDiameter(inputLD.value);
-  }
-  e.preventDefault();
+if (inputLD.value == "") {
+alert("Isi nilai terlebih dahulu!");
+} else if (inputLD.value != 7 && inputLD.value % 7 != 0) {
+alert("Isi nilai dengan kelipatan 7!");
+} else if (inputLD.value % 7 == 0) {
+document.getElementById("hasilLD").value = luasDiameter(inputLD.value);
+}
+e.preventDefault();
 });
 
 // Menghitung Keliling Lingkaran diameter
-// rumus: pi * d
+// rumus: pi _ d
 function kelilingDiameter(d) {
-  return (22 / 7) * d;
+return (22 / 7) _ d;
 }
 
 const inputKD = document.getElementById("kelilingD");
 document.getElementById("btnKD").addEventListener("click", (e) => {
-  if (inputKD.value == "") {
-    alert("Isi nilai terlebih dahulu!");
-  } else if (inputKD.value != 7 && inputKD.value % 7 != 0) {
-    alert("Isi nilai dengan kelipatan 7!");
-  } else if (inputKD.value % 7 == 0) {
-    document.getElementById("hasilKD").value = kelilingDiameter(inputKD.value);
-  }
-  e.preventDefault();
+if (inputKD.value == "") {
+alert("Isi nilai terlebih dahulu!");
+} else if (inputKD.value != 7 && inputKD.value % 7 != 0) {
+alert("Isi nilai dengan kelipatan 7!");
+} else if (inputKD.value % 7 == 0) {
+document.getElementById("hasilKD").value = kelilingDiameter(inputKD.value);
+}
+e.preventDefault();
 });
 
 // ------------------- Dibawah ini khusus Pi 3,14 -----------------
 // Menghitung luas lingkaran jari-jari
-// rumus: pi * r * r
+// rumus: pi _ r _ r
 function luasJariJari2(e) {
-  return 3.14 * e * e;
+return 3.14 _ e _ e;
 }
 const inputLJ2 = document.getElementById("luasJ2");
 document.getElementById("btnLJ2").addEventListener("click", (e) => {
-  if (inputLJ2.value == "") {
-    alert("Isi nilai terlebih dahulu!");
-  } else if (inputLJ2.value % 7 == 0) {
-    alert("Kelipatan 7 isi dibagian Pi: 22/7 ");
-  } else {
-    document.getElementById("hasilLJ2").value = luasJariJari2(inputLJ2.value);
-  }
-  e.preventDefault();
+if (inputLJ2.value == "") {
+alert("Isi nilai terlebih dahulu!");
+} else if (inputLJ2.value % 7 == 0) {
+alert("Kelipatan 7 isi dibagian Pi: 22/7 ");
+} else {
+document.getElementById("hasilLJ2").value = luasJariJari2(inputLJ2.value);
+}
+e.preventDefault();
 });
 
 // Menghitung Keliling Lingkaran jari-jari
-// rumus: pi * 2 * r
+// rumus: pi _ 2 _ r
 function kelilingJariJari2(f) {
-  return 3.14 * 2 * f;
+return 3.14 _ 2 _ f;
 }
 
 const inputKJ2 = document.getElementById("kelilingJ2");
 document.getElementById("btnKJ2").addEventListener("click", (e) => {
-  if (inputKJ2.value == "") {
-    alert("Isi nilai terlebih dahulu!");
-  } else if (inputKJ2.value % 7 == 0) {
-    alert("Kelipatan 7 isi dibagian Pi: 22/7 ");
-  } else {
-    document.getElementById("hasilKJ2").value = kelilingJariJari2(inputKJ2.value);
-  }
-  e.preventDefault();
+if (inputKJ2.value == "") {
+alert("Isi nilai terlebih dahulu!");
+} else if (inputKJ2.value % 7 == 0) {
+alert("Kelipatan 7 isi dibagian Pi: 22/7 ");
+} else {
+document.getElementById("hasilKJ2").value = kelilingJariJari2(inputKJ2.value);
+}
+e.preventDefault();
 });
 
 // Menghitung luas lingkaran diameter
-// rumus: pi * (r / 2) * (r/2)
+// rumus: pi _ (r / 2) _ (r/2)
 function luasDiameter2(g) {
-  return 3.14 * ((g / 2) * (g / 2));
+return 3.14 _ ((g / 2) _ (g / 2));
 }
 
 const inputLD2 = document.getElementById("luasD2");
 document.getElementById("btnLD2").addEventListener("click", (e) => {
-  if (inputLD2.value == "") {
-    alert("Isi nilai terlebih dahulu!");
-  } else if (inputLD2.value % 7 == 0) {
-    alert("Kelipatan 7 isi dibagian Pi: 22/7 ");
-  } else {
-    document.getElementById("hasilLD2").value = luasDiameter2(inputLD2.value);
-  }
-  e.preventDefault();
+if (inputLD2.value == "") {
+alert("Isi nilai terlebih dahulu!");
+} else if (inputLD2.value % 7 == 0) {
+alert("Kelipatan 7 isi dibagian Pi: 22/7 ");
+} else {
+document.getElementById("hasilLD2").value = luasDiameter2(inputLD2.value);
+}
+e.preventDefault();
 });
 
 // Menghitung Keliling Lingkaran diameter
-// rumus: pi * d
+// rumus: pi _ d
 function kelilingDiameter2(h) {
-  return 3.14 * h;
+return 3.14 _ h;
 }
 
 const inputKD2 = document.getElementById("kelilingD2");
 document.getElementById("btnKD2").addEventListener("click", (e) => {
-  if (inputKD2.value == "") {
-    alert("Isi nilai terlebih dahulu!");
-  } else if (inputKD2.value % 7 == 0) {
-    alert("Kelipatan 7 isi dibagian Pi: 22/7 ");
-  } else {
-    document.getElementById("hasilKD2").value = kelilingDiameter2(inputKD2.value);
-  }
-  e.preventDefault();
+if (inputKD2.value == "") {
+alert("Isi nilai terlebih dahulu!");
+} else if (inputKD2.value % 7 == 0) {
+alert("Kelipatan 7 isi dibagian Pi: 22/7 ");
+} else {
+document.getElementById("hasilKD2").value = kelilingDiameter2(inputKD2.value);
+}
+e.preventDefault();
 });
 {% endcodeblock %}
 
@@ -819,8 +831,10 @@ Hasil akhir dari pembelajaran ini seperti ini.
 
 Akhirnya selesai juga :", cukup panjang ya hehe. Gimana hasil teman-teman? apa berjalan dengan baik? jika belum berhasil coba japri via Telegram ya [Rian](https://t.me/riann18) dan sebelum japri coba di cek terlebih dahulu bagian console nya, mungkin saja ada error.
 
-Itu saja yang bisa saya bagikan, mungkin bisa diperbaiki lebih baik lagi program yang saya buat ini. Mungkin juga bisa di refactor agar kode nya lebih rapih dan juga tidak terlalu panjang. Kamu bisa lihat hasil saya [Demo](https://mfebriann.github.io/menghitung-luas-dan-keliling-lingkaran/)
+Itu saja yang bisa saya bagikan, mungkin bisa diperbaiki lebih baik lagi program yang saya buat ini. Mungkin juga bisa di refactor agar kode nya lebih rapih dan juga tidak terlalu panjang.
 
-Kurang lebih nya mohon dimaafkan, silahkan kirim kan komentar nya apabila ada masukkan ya. 
+Kamu bisa lihat hasil saya [Demo-Program](https://mfebriann.github.io/menghitung-luas-dan-keliling-lingkaran/) dan untuk melihat kode nya, kamu bisa lihat di [Repo-Github](https://github.com/mfebriann/menghitung-luas-dan-keliling-lingkaran).
+
+Kurang lebih nya mohon dimaafkan, silahkan kirim kan komentar nya apabila ada masukkan ya.
 
 Terima kasih semua, semoga dapat bermanfaat :D
