@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mfebriann.github.io/curhatan/akhirnya-bisa-membuat-blog-sendiri/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mfebriann.github.io/tutorial/hosting-web-dengan-vercel-dan-netlify/</loc>
     
     <lastmod>2021-05-07</lastmod>
@@ -29,13 +36,6 @@
     
   </url>
   
-  <url>
-    <loc>https://mfebriann.github.io/curhatan/akhirnya-bisa-membuat-blog-sendiri/</loc>
-    
-    <lastmod>2021-05-07</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://mfebriann.github.io/</loc>
@@ -44,6 +44,20 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://mfebriann.github.io/tags/perkenalan/</loc>
+    <lastmod>2021-05-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mfebriann.github.io/tags/curhatan/</loc>
+    <lastmod>2021-05-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
   <url>
     <loc>https://mfebriann.github.io/tags/hosting/</loc>
@@ -68,20 +82,6 @@
   
   <url>
     <loc>https://mfebriann.github.io/tags/netlify/</loc>
-    <lastmod>2021-05-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://mfebriann.github.io/tags/perkenalan/</loc>
-    <lastmod>2021-05-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://mfebriann.github.io/tags/curhatan/</loc>
     <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -118,14 +118,14 @@
 
   
   <url>
-    <loc>https://mfebriann.github.io/categories/tutorial/</loc>
+    <loc>https://mfebriann.github.io/categories/curhatan/</loc>
     <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://mfebriann.github.io/categories/curhatan/</loc>
+    <loc>https://mfebriann.github.io/categories/tutorial/</loc>
     <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
