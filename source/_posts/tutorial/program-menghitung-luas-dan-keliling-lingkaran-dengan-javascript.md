@@ -27,7 +27,6 @@ Pertama-tama kita menghitung luas dan keliling lingkaran menggunakan cara Pi 22/
 Buatlah file html terlebih dahulu, lalu tuliskan kode struktur html. Atau kamu bisa salin kode dibawah ini:
 
 {% codeblock index.html lang:html %}
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -49,7 +48,6 @@ Sedikit catatan, disini saya juga menambahkan perintah untuk menghubungkan file 
 
 Setelah file html telah siap, kita buat tag form sederhana untuk user menginputkan nilai nya. Atau kamu bisa salin kode dibawah ini di dalam tag **body** pada html:
 {% codeblock index.html lang:html %}
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -307,7 +305,6 @@ Sebelumnya didalam tag **body** pada file html kita berisi bagian perhitungan me
 
 Sekarang kamu bisa tambahkan dibawah setelah tag penutup form yang ada dibaris 64 (sesuai kode file html diatas sebelumnya), kamu bisa salin kode dibawah ini:
 {% codeblock index.html lang:html %}
-
  <!-- Bagian Pi 3, 14 -->
 
     <form class="pi2">
@@ -367,7 +364,6 @@ Sekarang kamu bisa tambahkan dibawah setelah tag penutup form yang ada dibaris 6
 
 Sehingga jika digabungkan kode nya, akan menjadi seperti ini:
 {% codeblock index.html lang:html %}
-
  <!DOCTYPE html>
 <html lang="en">
   <head>
