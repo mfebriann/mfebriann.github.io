@@ -7,16 +7,9 @@ Untuk menginstall hexo diperlukan beberapa persyaratan:
 1. [Git](https://git-scm.com/)
 2. [NodeJS](https://nodejs.org/en/)
 
-Dan untuk menggunakan tema Icarus diperlukan juga tambahan:
-```
-npm install --save bulma-stylus@0.8.0 hexo-renderer-inferno@^0.1.3 hexo-component-inferno@^0.10.5 inferno@^7.3.3 inferno-create-element@^7.3.3
-```
-> Jika kalian menggunakan cara mendownload nya 
-
 ## Setelah selesai menginstall beberapa persyartan, jika ingin menjalankan blog secara offline
 
 1. Clone repo ini
 `https://github.com/mfebriann/mfebriann.github.io.git`
-
-2. Akses blog
-`http://localhost:4000`
+2. Pindah ke directory hasil clone, lalu akses blog dengan perintah `hexo server` dan akses di browser **http://localhost:4000/** 
+3. Apabila saat mengakses terdapat pesan error `rm -rf node_modules && npm install --force` lakukan perintah tersebut 
