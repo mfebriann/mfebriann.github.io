@@ -19,6 +19,8 @@ Bismillahirrahmanirrahim
 
 Bagaimana kabarnya teman-teman semua?, semoga dalam keadaan sehat selalu ya. Sudah lama saya tidak menulis di blog karena ada beberapa urusan, sekarang ini saya akan membagikan cara membuat form pemesanan tiket destinasi yang sederhana, dimana ide ini saya dapat dari seseorang yang bertanya di grup Telegram mengenai tugas yang diberikan oleh dosen nya dan saya meminta tentang tugas itu untuk membuat nya sendiri sekaligus melatih pembelajaran saya tentang Javascript. Baiklah, tak perlu panjang lebar mari kita buat program tersebut.
 
+<!-- more -->
+
 Pertama yang kita siapkan file html nya terlebih dahulu dan kita isikan struktur membuat form, jangan lupa juga untuk menghubungkan file html kita dengan file css dan file javascript nya. Jika kamu ingin membuat sendiri struktur form kamu, silahkan dibuat terlebih dahulu yang paling terpenting adalah memberikan id pada tiap input, karena sangat berguna saat kita sudah masuk ke file javascript nanti. Jika kamu ingin mengikuti struktur saya, kamu bisa salin kode dibawah ini:
 {% codeblock index.html lang:html %}
 <!DOCTYPE html>
