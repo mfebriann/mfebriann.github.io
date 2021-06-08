@@ -217,7 +217,7 @@ widgets:
     # Author name
     author: Muhammad Febrian
     # Author title
-    author_title: Sedang mencari One Piece
+    author_title: Hanya sebuah catatan kecil
     # Author's current location
     location: Jakarta
     # URL or path to the avatar image
@@ -232,7 +232,7 @@ widgets:
     social_links:
       Github:
         icon: fab fa-github
-        url: "https://github.com/mfebriann"
+        url: "https://github.com/mfebriann/list-my-project"
       # Facebook:
       #     icon: fab fa-facebook
       #     url: 'https://www.facebook.com/mfebrian22'
