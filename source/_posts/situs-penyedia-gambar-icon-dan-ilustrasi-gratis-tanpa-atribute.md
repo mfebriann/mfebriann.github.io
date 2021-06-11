@@ -77,6 +77,9 @@ Sebenarnya diatas hanyalah beberapa, lebih tepatnya yang sering kunjungi. Bebera
 3. [DrawKit](https://www.drawkit.io/)
  - [License - DrawKit](https://www.drawkit.io/license)
 
+## Font
+1. [Google Fonts](https://fonts.google.com/)
+
  Cukup sekian saja pembahasannya, jangan lupa teman-teman diwajibkan untuk **membaca lisensi terlebih dahulu**, takutnya saya sendiri ada kekeliruan dalam membaca lisensi situs tersebut. Apabila ada kekeliruan dan kesalahan mohon dimaafkan, dan berikan komentar nya agar saya dapat memperbaikinya. 
 
  Terima kasih, semoga bermanfaat.
