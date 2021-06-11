@@ -158,7 +158,7 @@ search:
 comment:
   type: utterances
   repo: mfebriann/mfebriann.github.io
-  issue_term: pathname
+  issue_term: url
   theme: github-light
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
