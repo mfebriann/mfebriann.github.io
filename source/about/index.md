@@ -5,7 +5,7 @@ comments: true
 ---
 <h3>Hai, yang disana 👋</h3>
 
-Perkenalkan nama saya <b>Muhammad Febrian</b> atau biasa dipanggil <b>Rian</b>. Saya lulusan dari <b>SMK Negeri 54 Jakarta</b> yang mengambil jurusan Teknik Komputer Jaringan (TKJ). Saya sangat senang tentang dunia teknologi, khusus nya mengenai website. Sekarang sedang tahap belajar mengenai Javascript (Sok sibukin diri aja, hahaha).
+Perkenalkan nama saya <b>Muhammad Febrian</b> atau biasa dipanggil <b>Rian</b>. Saya lulusan dari <b>SMK Negeri 54 Jakarta</b> yang mengambil jurusan Teknik Komputer Jaringan (TKJ). Saya sangat senang tentang dunia teknologi, khusus nya mengenai website. Sekarang sedang tahap belajar mengenai Javascript.
 
 Tempat Lahir: Jakarta
 Tanggal Lahir: 18 Februari 2002
