@@ -10,7 +10,6 @@ Perkenalkan nama saya <b>Muhammad Febrian</b> atau biasa dipanggil <b>Rian</b>. 
 Tempat Lahir: Jakarta
 Tanggal Lahir: 18 Februari 2002
 Email: muhammadfebriyan86@gmail.com
-Nomor Telepon: +62 838-7496-8672
 
 Emmm, mungkin itu saja yang bisa saya bagikan mengenai perkenalan diri ini. Singkat saja ya, soalnya bingung mau perkenalin diri apa lagi hehehe.
 
